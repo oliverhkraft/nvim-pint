@@ -27,7 +27,7 @@ end
 
 function M.setup(user_options)
   local options = vim.tbl_extend('force', default_options, user_options or {})
-  vim.cmd([[autocmd BufWritePost * lua require('php_pint_nvim')._run_pint_on_save(require('php_pint_nvim')._options)]])
+  vim.cmd([[autocmd BufWritePost * lua require('neovim-pint')._run_pint_on_save(require('neovim-pint')._options)]])
 
   M._run_pint_on_save = run_pint_on_save
   M._options = options
