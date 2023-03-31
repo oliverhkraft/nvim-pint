@@ -14,7 +14,16 @@ local function run_pint_on_save(options)
         return
       end
     end
-    local command = './vendor/bin/pint %'
+    
+    local pint_path = './vendor/bin/pint'
+    if vim.fn.glob(pint_path) == '' then
+      if not options.silent then
+        print('Error: ./vendor/bin/pint not found.')
+      end
+      return
+    end
+
+    local command = pint_path .. ' %'
     if options.silent then
       command = command .. ' > /dev/null 2>&1'
     end
