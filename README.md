@@ -4,7 +4,7 @@ Run Laravel Pint when saving PHP files. Checks if Pint is present in *./vendor/b
 
 
 ### Include with Lazy 
-```
+```lua
 {
   'oliverhkraft/nvim-pint',
   config = function()
