@@ -1,7 +1,7 @@
 # neovim-pint
 Run Laravel Pint when saving PHP files
 
-´
+```
 {
   'oliverhkraft/neovim-pint',
   config = function()
@@ -11,4 +11,4 @@ Run Laravel Pint when saving PHP files
     }
   end
 }
-´
+```
