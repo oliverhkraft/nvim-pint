@@ -9,8 +9,8 @@ Run Laravel Pint when saving PHP files. Checks if Pint is present in *./vendor/b
   'oliverhkraft/nvim-pint',
   config = function()
     require('nvim-pint').setup {
-      silent = true, // No notifications
-      exclude_folders = {'resources/views'} // Accepts comma separated array to exlude folders
+      silent = true, -- No notifications
+      exclude_folders = {'resources/views'} -- Accepts comma separated array to exlude folders
     }
   end
 }
