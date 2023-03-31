@@ -18,10 +18,10 @@ local function run_pint_on_save(options)
     if options.silent then
       command = command .. ' > /dev/null 2>&1'
     end
-    vim.cmd('!' .. command)
     if not options.silent then
       print('PHP Pint executed!')
     end
+    vim.cmd('silent !' .. command)
   end
 end
 
