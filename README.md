@@ -3,9 +3,9 @@ Run Laravel Pint when saving PHP files
 
 ```
 {
-  'oliverhkraft/neovim-pint',
+  'oliverhkraft/nvim-pint',
   config = function()
-    require('neovim-pint').setup {
+    require('nvim-pint').setup {
       silent = true,
       exclude_folders = {'resources/views'}
     }
